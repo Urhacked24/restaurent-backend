@@ -41,11 +41,10 @@ const app = express();
 app.use(cors({
   origin: [process.env.FRONTEND_URL],
   methods: ["GET", "POST"],   // GET भी allow कर लो
-  // credentials: true,
+  credentials: false,
 }));
 
 
-// app.use(cors());
 
 // Middleware
 app.use(express.json());
