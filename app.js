@@ -38,13 +38,14 @@ dotenv.config({ path: "./config/.env" });
 const app = express();
 
 // CORS setup
-app.use(cors({
-  origin: [process.env.FRONTEND_URL],
-  methods: ["GET", "POST"],   // GET भी allow कर लो
-  credentials: false,
-}));
+// app.use(cors({
+//   origin: [process.env.FRONTEND_URL],
+//   methods: ["GET", "POST"],   // GET भी allow कर लो
+//   credentials: false,
+// }));
 
 
+app.use(cors());
 
 // Middleware
 app.use(express.json());
