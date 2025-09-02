@@ -21,4 +21,4 @@ export const sendReservation=async(req,res,next)=>{
     }
 };
 
-console.log("Request body:", req.body);
+// console.log("Request body:", req.body);
