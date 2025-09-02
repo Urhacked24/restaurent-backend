@@ -20,3 +20,5 @@ export const sendReservation=async(req,res,next)=>{
         return next(error)
     }
 };
+
+console.log("Request body:", req.body);
